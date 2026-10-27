@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Pink Goose</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="assets/images/hidden-goose.png">
+</head>
+<body>
+  <div class="bovenbalk">
+    <a class="naam" href="index.html">Pink <b>Goose</b></a>
+    <div class="navigatie">
+      <a href="index.html">Home</a>
+      <a href="learn.html">Learn</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="huidig">Contact</a>
+    </div>
+    <a class="inlogknop" href="#login">Login</a>
+  </div>
+  <div class="binnenpagina">
+    <div class="oproep" id="contact">
+
+      <h2>What's your GOOSE idea?</h2>
+      <p>Let’s chat and see how we can help</p>
+
+      <div class="oproep-links">
+        <a class="oproep-link link-telegram" href="https://t.me/superdao_team">
+          <span class="oproep-icoon"><img src="images/icon-telegram.svg" alt=""></span>
+          <span><b>Telegram</b>@superdao_team</span>
+        </a>
+        <a class="oproep-link link-email" href="mailto:hello@superdao.co">
+          <span class="oproep-icoon"><img src="images/icon-email.svg" alt=""></span>
+          <span><b>Email</b>hello@superdao.co</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="formulier-blok">
+      <h2>Send a post Goose</h2>
+
+      <form class="contactformulier" action="#contact-form" method="post">
+        <input id="post-email" name="email" type="email" placeholder="Your email" required>
+        <input id="post-name" name="name" type="text" placeholder="Your name" required>
+        <textarea id="post-message" name="message" rows="8" placeholder="Your message" required></textarea>
+        <div class="keuzeveld">
+          <select id="post-color" name="color" required>
+            <option value="" selected disabled>Color of your goose</option>
+            <option value="red">Red</option>
+            <option value="white">White</option>
+            <option value="blue">Blue</option>
+            <option value="black">Black</option>
+          </select>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="onderbalk">
+    <div class="onderbalk-inhoud">
+      <div class="onderbalk-nav">
+        <div class="onderbalk-lijst">
+          <div><a href="about.html">About</a></div>
+          <div><a href="#jobs">Jobs</a></div>
+          <div><a class="geel" href="#legal">Legal</a></div>
+        </div>
+      </div>
+
+      <div class="kanalen">
+        <div><a class="kanaal kanaal-x" href="#twitter"><img src="images/footer-twitter.svg" alt=""></a></div>
+        <div><a class="kanaal kanaal-tg" href="https://t.me/superdao_team"><img src="images/footer-telegram.svg" alt=""></a></div>
+        <div><a class="kanaal kanaal-yt" href="#youtube"><img src="images/footer-youtube.svg" alt=""></a></div>
+        <div><a class="kanaal kanaal-dc" href="#discord"><img src="images/footer-discord.svg" alt=""></a></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

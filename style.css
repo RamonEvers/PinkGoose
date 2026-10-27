@@ -1,0 +1,920 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background-color: #0a1117;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+h2 {
+  margin: 0;
+}
+.project-card {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 1300px;
+  height: 450px;
+  margin-top: 100px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.project-image img {
+  width: 120%;
+  margin-left: -100px;
+  margin-bottom: -200px;
+  height: auto;
+}
+.bovenbalk {
+  width: 90%;
+  max-width: 1100px;
+  height: 65px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.naam {
+  font-size: 19px;
+  font-weight: bold;
+}
+.naam b {
+  color: #ff9ed7;
+}
+/* projects image */
+
+.project-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1300px;
+    max-width: 100%;
+    height: 450px;
+    margin: 100px auto 0;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.project-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image img {
+    display: block;
+    width: 120%;
+    max-width: none;
+    height: auto;
+    margin: 0;
+}
+.navigatie {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-size: 11px;
+}
+.navigatie a:hover,
+.navigatie .huidig {
+  color: #ff9ed7;
+}
+.inlogknop {
+  background-color: #1b2b39;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 10px;
+}
+.banner {
+  position: relative;
+  min-height: 365px;
+  padding-top: 70px;
+  text-align: center;
+  overflow: hidden;
+}
+.banner h1 {
+  margin: 0;
+  font-size: 50px;
+  line-height: 1.1;
+}
+.banner p {
+  margin: 25px 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+.cta {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #c9a0ff;
+  color: #111;
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.werk {
+  width: 680px;
+  max-width: 92%;
+  margin: auto;
+  text-align: center;
+}
+.werk h2 {
+  font-size: 28px;
+}
+.werk-fotos {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.werk-fotos img {
+  width: 100%;
+  height: 141px;
+  display: block;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.stappen-blok {
+  position: relative;
+  padding: 120px 20px 90px;
+  text-align: center;
+}
+.stappen {
+  margin: 30px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.stappen p {
+  margin: 12px;
+  color: #263743;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: default;
+}
+.sectie {
+  width: 90%;
+  max-width: 860px;
+  margin: auto;
+  padding: 85px 0;
+  text-align: center;
+}
+.integraties {
+  position: relative;
+  width: 680px;
+  max-width: 92%;
+  padding: 65px 0 75px;
+  overflow: hidden;
+}
+.integraties h2 {
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+.integratie-rij {
+  margin: 38px auto 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  list-style: none;
+}
+.integratie {
+  min-width: 0;
+}
+.integratie-vak {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #293a47;
+  border-radius: 22px;
+  background: rgba(13, 28, 39, 0.22);
+}
+.integratie:hover .integratie-vak {
+  border-color: #3b5262;
+  background: rgba(18, 38, 52, 0.55);
+}
+.integratie-logo {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.integratie-logo img {
+  width: 23px;
+  height: 23px;
+  display: block;
+}
+.logo-eth {
+  background: #718af6;
+}
+.logo-polygon {
+  background: #8247e5;
+}
+.logo-safe {
+  position: relative;
+  background: #02a388;
+}
+.logo-safe > span {
+  width: 27px;
+  height: 14px;
+  position: relative;
+  display: block;
+}
+.logo-safe > span::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  background-color: #0a1117;
+  border-radius: 50%;
+}
+.logo-safe > span::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 5px;
+  width: 12px;
+  height: 4px;
+  background-color: #0a1117;
+  border-radius: 3px;
+}
+.logo-snapshot {
+  background: #ffb83d;
+  color: #0a1117;
+  font-size: 19px;
+}
+.logo-ens {
+  background: linear-gradient(145deg, #8e9cff, #45c9ef);
+}
+.logo-opensea {
+  background: #208de4;
+  color: #0a1117;
+  font-size: 19px;
+}
+.integratie-tekst {
+  display: block;
+  margin-top: 14px;
+  color: #eef1f5;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.team {
+  position: relative;
+  width: 680px;
+  max-width: 92%;
+  margin: 0 auto;
+  padding: 80px 0 95px;
+  text-align: center;
+  z-index: 0;
+}
+.team h2 {
+  font-size: 28px;
+}
+.team-fotos {
+  margin: 32px 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  list-style: none;
+}
+.team-foto {
+  width: 105px;
+  aspect-ratio: 1;
+  border-radius: 24px;
+  overflow: hidden;
+  background-color: #172733;
+}
+.team-foto img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.team-foto:nth-child(1) img {
+  object-position: center 32%;
+}
+.team-foto:nth-child(2) img {
+  transform: scale(2);
+  transform-origin: 33% 62%;
+}
+.team-foto:nth-child(3) img {
+  transform: scale(1.75);
+  transform-origin: 50% 39%;
+}
+.team-foto:nth-child(4) img {
+  object-position: center 26%;
+}
+.team-foto:nth-child(5) img {
+  object-position: center 31%;
+}
+.diensten {
+  width: 520px;
+  max-width: 100%;
+  margin: 30px auto 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px 32px;
+}
+.diensten span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.mailing {
+  width: 680px;
+  max-width: 92%;
+  margin: 70px auto 95px;
+  padding: 31px 34px 38px;
+  text-align: center;
+  background-color: #111f2b;
+  border: 1px solid #1d3444;
+  border-radius: 21px;
+}
+.mailing h2 {
+  font-size: 30px;
+  line-height: 1.15;
+}
+.mailing p {
+  margin: 18px 0 26px;
+  color: #71859a;
+  font-size: 17px;
+  font-weight: 700;
+}
+.mailing-veld {
+  width: 100%;
+  max-width: 426px;
+  margin: auto;
+  display: flex;
+  gap: 13px;
+}
+.mailing-veld input {
+  min-width: 0;
+  flex: 1;
+  padding: 12px 17px;
+  color: white;
+  background-color: #122331;
+  border: 1px solid #294151;
+  border-radius: 10px;
+  font: inherit;
+  font-size: 12px;
+}
+.mailing-veld input::placeholder {
+  color: #314658;
+  opacity: 1;
+}
+.mailing-veld button {
+  padding: 0 23px;
+  color: #111;
+  background-color: #c9a0ff;
+  border: 0;
+  border-radius: 10px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.mailing-veld button:hover,
+.mailing-veld button:focus {
+  background-color: #ff9ed7;
+}
+.nieuws {
+  position: relative;
+  width: 680px;
+  max-width: 92%;
+  margin: 0 auto;
+  padding: 40px 0 95px;
+}
+.nieuws-titel {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.nieuws h2 {
+  font-size: 30px;
+  line-height: 1.15;
+}
+.nieuws-meer {
+  color: #71859a;
+  font-size: 13px;
+  font-weight: 700;
+  transition: color 0.2s;
+}
+.nieuws-meer:hover {
+  color: white;
+}
+.nieuws-meer i,
+.nieuws-item a i {
+  margin-left: 3px;
+  font-size: 0.85em;
+}
+.nieuws-rij {
+  margin: 28px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+  list-style: none;
+}
+.nieuws-item {
+  min-height: 227px;
+  padding: 18px 17px 22px;
+  display: flex;
+  flex-direction: column;
+  color: #0a1117;
+  border-radius: 12px;
+}
+.item-cyaan {
+  background-color: #77e6ff;
+}
+.item-lila {
+  background-color: #e2c1f9;
+}
+.item-limoen {
+  background-color: #dbe268;
+}
+.nieuws-bron {
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+.nieuws-bron img {
+  height: 100%;
+  display: block;
+}
+.bron-blockworks img {
+  height: 14px;
+}
+.bron-techcrunch img {
+  height: 15px;
+}
+.nieuws-item h3 {
+  margin: 14px 0 9px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+.nieuws-item p {
+  margin: 0 0 18px;
+  color: #26323c;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.nieuws-item a {
+  margin-top: auto;
+  color: #0a1117;
+  font-size: 11px;
+  font-weight: 700;
+}
+.audio {
+  position: relative;
+  width: 680px;
+  max-width: 92%;
+  margin: 0 auto;
+  padding: 0 0 110px;
+}
+.audio h2,
+.oproep h2 {
+  font-size: 30px;
+  line-height: 1.15;
+}
+.audio-rij {
+  margin: 28px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+  list-style: none;
+}
+.audio-item {
+  min-height: 200px;
+  padding: 18px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #121e28;
+  border: 1px solid #2a3744;
+  border-radius: 12px;
+}
+.audio-item img {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border-radius: 5px;
+}
+.audio-item h3 {
+  margin: 13px 0 11px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+.audio-item p {
+  margin: 0 0 18px;
+  color: #e2e2e2;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+.audio-item a {
+  margin-top: auto;
+  font-size: 11px;
+  font-weight: 700;
+}
+.audio-item a i {
+  margin-left: 3px;
+  font-size: 0.85em;
+}
+.oproep {
+  position: relative;
+  width: 680px;
+  max-width: 92%;
+  margin: 0 auto;
+  padding: 0 0 110px;
+  text-align: center;
+}
+.oproep h2 {
+  color: #e5e5e5;
+}
+.oproep p {
+  margin: 10px 0 0;
+  color: #5a6c7e;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.oproep-links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 19px;
+}
+.oproep-link {
+  width: 168px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  font-size: 10px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.oproep-link b {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 12px;
+}
+.link-telegram {
+  color: #4d3705;
+  background-color: #ffc803;
+  box-shadow: 0 5px 24px rgba(255, 200, 3, 0.2);
+}
+.link-email {
+  color: #40354b;
+  background-color: #e2c1f9;
+  box-shadow: 0 5px 24px rgba(226, 193, 249, 0.2);
+}
+.oproep-icoon {
+  width: 31px;
+  height: 31px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.oproep-icoon img {
+  width: 17px;
+  height: 17px;
+  display: block;
+}
+.onderbalk {
+  background-color: #121e28;
+}
+.onderbalk-inhoud {
+  width: 680px;
+  max-width: 92%;
+  min-height: 100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+.onderbalk-nav {
+  grid-column: 2;
+}
+.onderbalk-lijst,
+.kanalen {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+.onderbalk-lijst {
+  gap: 34px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.onderbalk-lijst a:hover {
+  color: #ff9ed7;
+}
+.onderbalk-lijst .geel {
+  color: #ffc803;
+}
+.kanalen {
+  justify-self: end;
+  gap: 12px;
+}
+.kanaal {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.kanaal img {
+  width: 17px;
+  height: 17px;
+  display: block;
+}
+.kanaal-x {
+  background-color: rgba(119, 230, 255, 0.15);
+}
+.kanaal-tg {
+  background-color: rgba(119, 149, 255, 0.15);
+}
+.kanaal-yt {
+  background-color: rgba(247, 135, 135, 0.15);
+}
+.kanaal-dc {
+  background-color: rgba(146, 119, 255, 0.15);
+}
+.binnenpagina {
+  padding-top: 80px;
+}
+.binnenpagina .team {
+  padding-top: 20px;
+}
+.binnenpagina .oproep {
+  padding-bottom: 70px;
+}
+.formulier-blok {
+  position: relative;
+  width: 565px;
+  max-width: 92%;
+  margin: 0 auto 110px;
+  padding: 24px 18px 17px;
+  text-align: center;
+  background-color: #121e28;
+  border: 1px solid #2a3744;
+  border-radius: 18px;
+  overflow: hidden;
+  z-index: 0;
+}
+.formulier-blok h2 {
+  font-size: 30px;
+  line-height: 1.15;
+}
+.contactformulier {
+  margin-top: 26px;
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+}
+.contactformulier input,
+.contactformulier textarea,
+.contactformulier select {
+  width: 100%;
+  max-width: 320px;
+  padding: 12px 17px;
+  display: block;
+  color: white;
+  background-color: #121e28;
+  border: 1px solid #2a3744;
+  border-radius: 10px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+}
+.contactformulier textarea {
+  height: 186px;
+  resize: vertical;
+}
+.contactformulier input::placeholder,
+.contactformulier textarea::placeholder {
+  color: #3d4c5b;
+  opacity: 1;
+}
+.contactformulier input:focus,
+.contactformulier textarea:focus,
+.contactformulier select:focus {
+  border-color: #3b5262;
+  outline: none;
+}
+.keuzeveld {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+}
+.contactformulier select {
+  width: 100%;
+  appearance: none;
+  cursor: pointer;
+}
+.contactformulier select:invalid {
+  color: #3d4c5b;
+}
+.contactformulier option {
+  color: white;
+  background-color: #121e28;
+}
+.keuzeveld i {
+  position: absolute;
+  top: 50%;
+  right: 17px;
+  color: #3d4c5b;
+  font-size: 11px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.contactformulier button {
+  justify-self: end;
+  margin-top: 8px;
+  padding: 12px 37px;
+  color: #10151a;
+  background-color: #ceaaff;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 26px rgba(206, 170, 255, 0.25);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.contactformulier button:hover,
+.contactformulier button:focus {
+  background-color: #ff9ed7;
+}
+@media screen and (max-width: 600px) {
+  .bovenbalk {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 18px 0;
+  }
+  .navigatie {
+    width: 100%;
+    order: 3;
+    justify-content: space-between;
+  }
+  .banner h1 {
+    font-size: 38px;
+  }
+  .werk-fotos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .werk-fotos img {
+    height: 114px;
+  }
+  .mailing {
+    margin-top: 55px;
+    padding: 28px 18px 30px;
+  }
+  .mailing h2 {
+    font-size: 27px;
+  }
+  .mailing p {
+    font-size: 15px;
+  }
+  .mailing-veld {
+    flex-direction: column;
+  }
+  .mailing-veld button {
+    min-height: 42px;
+  }
+  .integraties {
+    padding: 65px 0 70px;
+  }
+  .integraties h2 {
+    font-size: 28px;
+  }
+  .integratie-rij {
+    margin-top: 46px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 16px;
+  }
+  .integratie-vak {
+    border-radius: 32px;
+  }
+  .integratie-logo {
+    width: 52px;
+    height: 52px;
+  }
+  .integratie-tekst {
+    margin-top: 14px;
+    font-size: 17px;
+  }
+  .team {
+    padding: 68px 0 80px;
+  }
+  .team-fotos {
+    margin-top: 28px;
+    gap: 7px;
+  }
+  .team-foto {
+    flex: 1;
+    border-radius: 16px;
+  }
+  .diensten {
+    gap: 10px 22px;
+  }
+  .diensten span {
+    font-size: 17px;
+  }
+  .nieuws {
+    padding: 30px 0 80px;
+  }
+  .nieuws h2 {
+    font-size: 27px;
+  }
+  .nieuws-rij {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .nieuws-item {
+    min-height: 0;
+  }
+  .audio,
+  .oproep {
+    padding-bottom: 80px;
+  }
+  .audio h2,
+  .oproep h2 {
+    font-size: 27px;
+  }
+  .audio-rij {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .audio-item {
+    min-height: 0;
+  }
+  .oproep p {
+    font-size: 19px;
+  }
+  .oproep-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .oproep-link {
+    width: 100%;
+    max-width: 240px;
+  }
+  .onderbalk-inhoud {
+    padding: 28px 0;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
+  }
+  .onderbalk-nav {
+    grid-column: auto;
+  }
+  .kanalen {
+    justify-self: center;
+  }
+  .binnenpagina {
+    padding-top: 60px;
+  }
+  .formulier-blok {
+    padding: 24px 16px 18px;
+  }
+  .formulier-blok h2 {
+    font-size: 27px;
+  }
+  .contactformulier button {
+    justify-self: stretch;
+  }
+}
+.stappen p:hover {
+  color: #FD5F97;
+  cursor: pointer;
+}
